@@ -153,3 +153,30 @@ export const reassuranceIcons = [
         text: "Garantia incondicional de 7 dias"
     }
 ];
+
+export const faqItems = [
+  {
+    question: "O acesso é vitalício?",
+    answer: "Sim! Seu acesso é vitalício. Você poderá ver e rever o conteúdo quantas vezes quiser, além de receber todas as futuras atualizações gratuitamente, sem nenhum custo adicional."
+  },
+  {
+    question: "Como vou receber o acesso?",
+    answer: "O acesso é liberado imediatamente após a confirmação do pagamento. Você receberá um e-mail com todas as instruções para acessar a área de membros."
+  },
+  {
+    question: "Os produtos são originais?",
+    answer: "Trabalhamos com fornecedores que oferecem produtos de qualidade premium, idênticos aos originais em todos os detalhes: tecido, costura, etiquetas e tecnologia. É a mesma qualidade que você encontra nas grandes lojas, mas por uma fração do preço."
+  },
+  {
+    question: "Preciso de muito dinheiro para começar?",
+    answer: "Não! Você pode começar com pouquíssimo investimento. Ensinamos estratégias para vender sob demanda, onde você primeiro vende o produto para depois comprá-lo, eliminando a necessidade de ter um estoque inicial."
+  },
+  {
+    question: "E se eu não gostar?",
+    answer: "Seu risco é zero. Você tem uma garantia incondicional de 7 dias. Se por qualquer motivo você não ficar satisfeito, basta nos enviar um e-mail e nós devolveremos 100% do seu dinheiro, sem perguntas."
+  },
+  {
+    question: "O pagamento é seguro?",
+    answer: "Sim, 100% seguro. O pagamento é processado pela maior e mais segura plataforma de produtos digitais da América Latina. Seus dados estão completamente protegidos."
+  }
+];
