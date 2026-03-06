@@ -123,25 +123,33 @@ export const testimonials = [
 ];
 
 export const offerFeatures = [
-  "Acesso completo ao Método Futebol Lucrativo PRO",
-  "Planilhas de gerenciamento de banca",
-  "Acesso ao grupo VIP de alunos no Telegram",
-  "Suporte individual para tirar dúvidas",
-  "Atualizações vitalícias do conteúdo",
-  "Bônus: Módulo de mentalidade de investidor",
+  "Acesso completo ao Método Futebol Lucrativo",
+  "Lista de fornecedores verificados para comprar barato",
+  "Planilha simples para calcular lucro em cada venda",
+  "Grupo VIP com vendedores ativos para trocar um NETWORKING",
+  "Suporte para tirar dúvidas",
+  "Atualizações gratuitas do conteúdo",
+];
+
+export const exclusiveBonuses = [
+  "Como vender camisas na Shopee passo a passo",
+  "Estratégia para vender usando TikTok Shop",
+  "Como vender todos os dias pelo Instagram",
+  "Mentalidade de vendedor lucrativo",
+  "Estratégia simples para conseguir as primeiras vendas rápidas",
 ];
 
 export const reassuranceIcons = [
     {
         icon: Lock,
-        text: "Acesso imediato"
+        text: "Acesso liberado imediatamente"
     },
     {
         icon: CreditCard,
-        text: "Pagamento seguro"
+        text: "Pagamento 100% seguro"
     },
     {
         icon: ShieldCheck,
-        text: "Garantia de 7 dias"
+        text: "Garantia incondicional de 7 dias"
     }
 ];
