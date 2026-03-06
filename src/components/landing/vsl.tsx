@@ -1,7 +1,10 @@
+"use client";
+
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { PlayCircle, CheckCircle } from 'lucide-react';
 import Image from 'next/image';
 import { CtaButton } from './cta-button';
+import { useState } from 'react';
 
 const microProofs = [
     "Método simples",
@@ -11,6 +14,12 @@ const microProofs = [
 
 export function Vsl() {
   const thumbnail = PlaceHolderImages.find(img => img.id === 'vsl-thumbnail');
+  const [isPlaying, setIsPlaying] = useState(false);
+  const videoId = 'sdwXQor-WvE';
+
+  const handlePlay = () => {
+    setIsPlaying(true);
+  };
 
   return (
     <section className="pb-12 md:pb-16">
@@ -24,21 +33,38 @@ export function Vsl() {
         </div>
         
         <div className="relative aspect-video w-full rounded-xl overflow-hidden shadow-2xl shadow-black/50 border-4 border-accent">
-          {thumbnail && (
-            <Image
-              src={thumbnail.imageUrl}
-              alt={thumbnail.description}
-              fill
-              className="object-cover"
-              data-ai-hint={thumbnail.imageHint}
-            />
+          {isPlaying ? (
+            <iframe
+              className="absolute inset-0 w-full h-full"
+              src={`https://www.youtube.com/embed/${videoId}?autoplay=1&controls=0&showinfo=0&rel=0&loop=1&playlist=${videoId}`}
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            ></iframe>
+          ) : (
+            <>
+              {thumbnail && (
+                <Image
+                  src={thumbnail.imageUrl}
+                  alt={thumbnail.description}
+                  fill
+                  className="object-cover cursor-pointer"
+                  data-ai-hint={thumbnail.imageHint}
+                  onClick={handlePlay}
+                />
+              )}
+              <div 
+                className="absolute inset-0 bg-black/40 flex items-center justify-center cursor-pointer"
+                onClick={handlePlay}
+              >
+                <PlayCircle className="w-20 h-20 md:w-32 md:h-32 text-white/70 hover:text-white hover:scale-110 transition-all" />
+              </div>
+              <div className="absolute bottom-4 left-4 bg-red-600 text-white px-2 py-1 text-xs font-bold rounded">
+                AO VIVO
+              </div>
+            </>
           )}
-          <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
-            <PlayCircle className="w-20 h-20 md:w-32 md:h-32 text-white/70 hover:text-white hover:scale-110 transition-all cursor-pointer" />
-          </div>
-          <div className="absolute bottom-4 left-4 bg-red-600 text-white px-2 py-1 text-xs font-bold rounded">
-            AO VIVO
-          </div>
         </div>
 
         <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-y-4 gap-x-8 max-w-3xl w-full text-center">
