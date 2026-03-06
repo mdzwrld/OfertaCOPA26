@@ -1,3 +1,40 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "vsl-thumbnail",
+      "description": "Video sales letter thumbnail",
+      "imageUrl": "https://picsum.photos/seed/vsl/1280/720",
+      "imageHint": "soccer stadium"
+    },
+    {
+      "id": "testimonial-1",
+      "description": "Avatar of a user",
+      "imageUrl": "https://picsum.photos/seed/user1/100/100",
+      "imageHint": "person portrait"
+    },
+    {
+      "id": "testimonial-2",
+      "description": "Avatar of a user",
+      "imageUrl": "https://picsum.photos/seed/user2/100/100",
+      "imageHint": "person portrait"
+    },
+    {
+      "id": "testimonial-3",
+      "description": "Avatar of a user",
+      "imageUrl": "https://picsum.photos/seed/user3/100/100",
+      "imageHint": "person portrait"
+    },
+    {
+      "id": "income-proof-1",
+      "description": "Screenshot of income proof",
+      "imageUrl": "https://picsum.photos/seed/income1/300/500",
+      "imageHint": "phone screen"
+    },
+    {
+      "id": "income-proof-2",
+      "description": "Screenshot of income proof",
+      "imageUrl": "https://picsum.photos/seed/income2/300/500",
+      "imageHint": "phone screen"
+    }
+  ]
 }
