@@ -2,7 +2,8 @@ import Image from 'next/image';
 import { CtaButton } from './cta-button';
 
 export function ProfitSection() {
-  const jerseyImageUrl = 'https://storage.googleapis.com/maker-studio-5289a.appspot.com/prompt_and_response_images/ZdGg97TMTfQv9n7oW5XyRqb2GqH3/1722421714480_0.jpeg';
+  const compraImageUrl = 'https://i.postimg.cc/N0C8DfV8/camisa-brasil-copa-2022-away1-1a2ee6a3d888e1650917193631604996-1024-1024.png';
+  const vendaImageUrl = 'https://i.postimg.cc/SQBrHRKg/camisa-brasil-copa-20221-d55f265d7df90b0b2517193630804113-1024-1024.png';
 
   return (
     <section className="py-12 md:py-24">
@@ -16,7 +17,7 @@ export function ProfitSection() {
           <div className="flex flex-col items-center p-6 rounded-lg bg-card border border-primary/20">
             <h3 className="text-xl md:text-2xl font-bold uppercase text-foreground/80 mb-4">Você compra do fornecedor</h3>
             <Image 
-              src={jerseyImageUrl}
+              src={compraImageUrl}
               alt="Camisa de futebol do Brasil - Preço de compra"
               width={300}
               height={300}
@@ -31,7 +32,7 @@ export function ProfitSection() {
           <div className="flex flex-col items-center p-6 rounded-lg bg-card border border-accent/20">
             <h3 className="text-xl md:text-2xl font-bold uppercase text-foreground/80 mb-4">Você revende na internet</h3>
              <Image 
-              src={jerseyImageUrl}
+              src={vendaImageUrl}
               alt="Camisa de futebol do Brasil - Preço de venda"
               width={300}
               height={300}
