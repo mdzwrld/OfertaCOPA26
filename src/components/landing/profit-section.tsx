@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { CtaButton } from './cta-button';
 
 export function ProfitSection() {
-  const jerseyImageUrl = 'https://storage.googleapis.com/maker-studio-5289a.appspot.com/prompt_and_response_images/ZdGg97TMTfQv9n7oW5XyRqb2GqH3/1722421303866_0.jpeg';
+  const jerseyImageUrl = 'https://storage.googleapis.com/maker-studio-5289a.appspot.com/prompt_and_response_images/ZdGg97TMTfQv9n7oW5XyRqb2GqH3/1722421714480_0.jpeg';
 
   return (
     <section className="py-12 md:py-24">
