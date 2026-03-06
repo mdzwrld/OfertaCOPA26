@@ -69,7 +69,7 @@ export function Testimonials() {
         <div className="my-16 md:my-24 max-w-3xl mx-auto text-center p-6 md:p-8 bg-background border border-border rounded-lg shadow-lg">
           <div className="space-y-6">
             <h3 className="text-2xl md:text-3xl font-bold text-white text-balance">
-              “Você não precisa ter seguidores para vender camisas de time.”
+              Você não precisa ter seguidores para vender camisas de time.
             </h3>
             <p className="text-lg text-foreground/80 text-balance">
               Na verdade, a maioria das vendas acontece para pessoas que nunca te viram antes.
