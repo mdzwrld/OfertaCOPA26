@@ -15,15 +15,6 @@ export function Hero() {
           <br />
           No vídeo abaixo você vai entender como isso funciona.
         </p>
-        
-        <div className="mt-10 max-w-xs mx-auto bg-card border-2 border-dashed border-primary/50 p-4 rounded-lg shadow-lg shadow-primary/10">
-            <h3 className="text-md font-bold uppercase text-primary tracking-widest">Exemplo Real</h3>
-            <div className="mt-2 text-lg font-semibold text-foreground">
-                <p>Camisa comprada: <span className="font-bold text-accent">R$40</span></p>
-                <p>Venda média: <span className="font-bold text-accent">R$120</span></p>
-                <p className="mt-2 text-primary text-xl">Lucro por peça: <span className="font-black">R$80</span></p>
-            </div>
-        </div>
       </div>
     </section>
   );

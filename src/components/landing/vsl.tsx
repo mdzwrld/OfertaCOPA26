@@ -17,7 +17,7 @@ export function Vsl() {
       <div className="container mx-auto max-w-5xl flex flex-col items-center">
         
         <div className="text-center mb-6">
-            <p className="font-black text-2xl uppercase text-red-500 animate-pulse tracking-wider">Assista antes que essa página saia do ar</p>
+            <p className="font-black text-2xl uppercase text-red-500 animate-pulse tracking-wider">Assista antes que o preço suba</p>
             <p className="mt-3 max-w-2xl mx-auto text-foreground/80 text-balance">
                 Assista a este vídeo rápido. Porque quando a Copa começar, esses produtos simplesmente desaparecem das lojas. E quem tem acesso ao fornecedor lucra primeiro.
             </p>
