@@ -8,8 +8,8 @@ export function ProfitSection() {
   return (
     <section className="py-12 md:py-24">
       <div className="container mx-auto text-center">
-        <h2 className="text-3xl md:text-5xl font-black text-accent uppercase tracking-wider mb-12">
-          Quanto você pode lucrar com uma única camisa
+        <h2 className="text-3xl md:text-5xl font-black text-accent uppercase tracking-wider mb-12 text-balance">
+          Veja como uma única camisa pode gerar R$80 de lucro
         </h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-12">
