@@ -1,8 +1,9 @@
+import { CtaButton } from "./cta-button";
 import { Lightbulb } from "lucide-react";
 
 export function Opportunity() {
   return (
-    <section className="py-12 md:py-24">
+    <section id="oportunidade" className="py-12 md:py-24">
       <div className="container mx-auto max-w-4xl text-center">
         <div className="flex justify-center mb-8">
             <Lightbulb className="w-16 h-16 text-accent animate-pulse" />
@@ -40,6 +41,12 @@ export function Opportunity() {
             <p className="font-bold text-primary pt-6 text-xl md:text-2xl">
                 E é exatamente isso que milhares de vendedores já estão fazendo hoje.
             </p>
+        </div>
+        <div className="mt-12 flex flex-col items-center">
+          <CtaButton />
+          <p className="mt-3 text-sm text-muted-foreground">
+              Acesso imediato após o pagamento.
+          </p>
         </div>
       </div>
     </section>
