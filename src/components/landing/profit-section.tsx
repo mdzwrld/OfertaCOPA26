@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { CtaButton } from './cta-button';
 
 export function ProfitSection() {
-  const jerseyImageUrl = 'https://png.pngtree.com/png-vector/20221015/ourmid/pngtree-brazil-soccer-team-home-jersey-png-image_6332687.png';
+  const jerseyImageUrl = 'https://storage.googleapis.com/maker-studio-5289a.appspot.com/prompt_and_response_images/ZdGg97TMTfQv9n7oW5XyRqb2GqH3/1722421303866_0.jpeg';
 
   return (
     <section className="py-12 md:py-24">
@@ -20,7 +20,7 @@ export function ProfitSection() {
               alt="Camisa de futebol do Brasil - Preço de compra"
               width={300}
               height={300}
-              className="object-contain"
+              className="object-contain rounded-lg"
             />
             <p className="mt-4 text-lg text-foreground/70">Paga apenas</p>
             <p className="text-6xl md:text-7xl font-black text-primary my-2">R$40</p>
@@ -35,7 +35,7 @@ export function ProfitSection() {
               alt="Camisa de futebol do Brasil - Preço de venda"
               width={300}
               height={300}
-              className="object-contain"
+              className="object-contain rounded-lg"
             />
             <p className="mt-4 text-lg text-foreground/70">Vende por</p>
             <p className="text-6xl md:text-7xl font-black text-accent my-2">R$120</p>
