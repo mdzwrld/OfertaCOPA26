@@ -77,10 +77,10 @@ export function Testimonials() {
             <p className="text-lg text-foreground/80 text-balance">
               Por isso eu incluí um bônus ensinando como vender usando:
             </p>
-            <div className="flex flex-wrap justify-center items-center gap-4 my-4 text-lg">
-              <span className="bg-primary/10 text-primary font-semibold px-4 py-2 rounded-md border border-primary/20">Shopee</span>
-              <span className="bg-primary/10 text-primary font-semibold px-4 py-2 rounded-md border border-primary/20">TikTok</span>
-              <span className="bg-primary/10 text-primary font-semibold px-4 py-2 rounded-md border border-primary/20">Instagram</span>
+            <div className="flex flex-wrap justify-center items-center gap-4 my-6 text-lg">
+              <span className="bg-primary/10 text-primary font-bold px-6 py-3 rounded-lg border border-primary/20 shadow-lg shadow-primary/10 transition-transform hover:scale-105">Shopee</span>
+              <span className="bg-primary/10 text-primary font-bold px-6 py-3 rounded-lg border border-primary/20 shadow-lg shadow-primary/10 transition-transform hover:scale-105">TikTok</span>
+              <span className="bg-primary/10 text-primary font-bold px-6 py-3 rounded-lg border border-primary/20 shadow-lg shadow-primary/10 transition-transform hover:scale-105">Instagram</span>
             </div>
             <p className="text-lg text-foreground/80 text-balance">
               Plataformas que já têm milhões de pessoas procurando produtos todos os dias.
