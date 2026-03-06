@@ -1,5 +1,14 @@
-import { benefits } from "@/lib/data";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { CheckCircle } from "lucide-react";
+
+const exclusiveBenefits = [
+  "Fornecedor secreto de produtos de futebol",
+  "Passo a passo de importação",
+  "Produtos campeões de venda",
+  "Estratégia para vender rápido",
+  "Como vender no Instagram",
+  "Como vender na Shopee",
+  "Como vender no Mercado Livre",
+];
 
 export function Benefits() {
   return (
@@ -13,23 +22,13 @@ export function Benefits() {
             Veja por que nosso método é a escolha número 1 de quem busca lucros reais com futebol.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {benefits.map((benefit, index) => {
-            const Icon = benefit.icon;
-            return (
-              <Card key={index} className="bg-background/50 border-primary/20 shadow-lg shadow-primary/10 transition-transform transform hover:-translate-y-2">
-                <CardHeader className="items-center text-center">
-                  <div className="p-4 bg-primary/20 rounded-full mb-4">
-                    <Icon className="w-8 h-8 text-primary" />
-                  </div>
-                  <CardTitle className="text-xl font-bold text-accent">{benefit.title}</CardTitle>
-                </CardHeader>
-                <CardContent className="text-center">
-                  <p className="text-foreground/80">{benefit.description}</p>
-                </CardContent>
-              </Card>
-            );
-          })}
+        <div className="max-w-3xl mx-auto space-y-4">
+          {exclusiveBenefits.map((benefit, index) => (
+            <div key={index} className="flex items-start gap-4 p-5 rounded-lg bg-background/50 border border-primary/20 shadow-lg shadow-primary/10 transition-transform transform hover:-translate-y-1">
+              <CheckCircle className="w-7 h-7 text-primary flex-shrink-0 mt-0.5" />
+              <p className="text-lg font-medium text-foreground/90 text-left">{benefit}</p>
+            </div>
+          ))}
         </div>
       </div>
     </section>
