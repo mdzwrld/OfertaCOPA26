@@ -8,13 +8,6 @@ export function Hero() {
           <br />
           <span className="text-primary underline">Antes da Copa do Mundo</span>
         </h1>
-        <p className="mt-8 max-w-3xl mx-auto text-lg md:text-xl text-foreground/80 text-balance">
-          Existe um fornecedor que vende camisas e produtos de futebol por até 70% mais barato.
-          <br />
-          Algumas pessoas estão comprando por <span className="font-bold text-accent text-2xl">R$40</span> e revendendo por <span className="font-bold text-accent text-2xl">R$120</span> ou mais.
-          <br />
-          No vídeo abaixo você vai entender como isso funciona.
-        </p>
       </div>
     </section>
   );
