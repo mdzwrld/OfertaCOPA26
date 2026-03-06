@@ -1,6 +1,7 @@
 import { Footer } from "@/components/landing/footer";
 import { Hero } from "@/components/landing/hero";
 import { Offer } from "@/components/landing/offer";
+import { Opportunity } from "@/components/landing/opportunity";
 import { ProfitSection } from "@/components/landing/profit-section";
 import { StickyCta } from "@/components/landing/sticky-cta";
 import { Testimonials } from "@/components/landing/testimonials";
@@ -15,6 +16,7 @@ export default function Home() {
         <ProfitSection />
         <Testimonials />
         <Offer />
+        <Opportunity />
       </main>
       <Footer />
       <StickyCta />
