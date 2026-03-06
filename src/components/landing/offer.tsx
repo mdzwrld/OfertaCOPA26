@@ -56,6 +56,12 @@ export function Offer() {
               </div>
             </div>
             
+            <div className="flex justify-center my-8">
+                <CtaButton className="w-full max-w-lg">
+                  QUERO ACESSAR O FORNECEDOR AGORA
+                </CtaButton>
+            </div>
+
             <div className="my-12 pt-8 border-t border-border">
               <h3 className="text-2xl md:text-3xl font-bold text-center mb-2">Você não recebe apenas o fornecedor…</h3>
               <p className="text-center text-muted-foreground mb-8">Você recebe um pacote completo para começar a vender.</p>
