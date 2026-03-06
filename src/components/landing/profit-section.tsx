@@ -49,17 +49,17 @@ export function ProfitSection() {
             <h3 className="text-2xl md:text-4xl font-black uppercase text-accent tracking-wider">Seu Potencial de Lucro é Gigante</h3>
             <p className="mt-2 text-lg text-foreground/80">A matemática é simples e poderosa.</p>
 
-            <div className="my-8 flex flex-col md:flex-row justify-center items-center gap-8 text-center">
+            <div className="my-8 flex flex-col md:flex-row justify-center items-center gap-4 md:gap-8 text-center">
                 <div className="flex-1">
                     <p className="text-6xl md:text-8xl font-black text-primary">R$80</p>
                     <p className="font-bold text-primary text-xl">LUCRO POR CAMISA</p>
                 </div>
-                <div className="text-4xl font-thin text-accent/50 hidden md:block">X</div>
+                <div className="text-2xl md:text-4xl font-thin text-accent/50">X</div>
                 <div className="flex-1">
                     <p className="text-6xl md:text-8xl font-black text-foreground">10</p>
                     <p className="font-bold text-foreground/80 text-xl">VENDAS POR DIA</p>
                 </div>
-                <div className="text-4xl font-thin text-accent/50 hidden md:block">=</div>
+                <div className="text-2xl md:text-4xl font-thin text-accent/50">=</div>
                 <div className="flex-1">
                     <p className="text-6xl md:text-8xl font-black text-accent">R$800</p>
                     <p className="font-bold text-accent text-xl">POR DIA</p>
