@@ -99,7 +99,35 @@ export function Testimonials() {
                 Resultados de Alunos
             </h3>
         </div>
-        <div className="flex justify-center gap-8 flex-wrap">
+        
+        <div className="md:hidden">
+            <Carousel
+                opts={{ align: "center", loop: true }}
+                className="w-full max-w-xs mx-auto"
+            >
+                <CarouselContent>
+                    {[getImage('income-proof-1'), getImage('income-proof-2')].map((proof, index) => (
+                        proof && (
+                            <CarouselItem key={index}>
+                                <div className="rounded-lg overflow-hidden border-4 border-primary/50 shadow-lg shadow-primary/20">
+                                    <Image
+                                        src={proof.imageUrl}
+                                        alt={proof.description}
+                                        width={300}
+                                        height={500}
+                                        className="object-cover"
+                                        data-ai-hint={proof.imageHint}
+                                    />
+                                </div>
+                            </CarouselItem>
+                        )
+                    ))}
+                </CarouselContent>
+                <CarouselPrevious />
+                <CarouselNext />
+            </Carousel>
+        </div>
+        <div className="hidden md:flex justify-center gap-8 flex-wrap">
             {[getImage('income-proof-1'), getImage('income-proof-2')].map((proof, index) => (
                 proof && (
                     <div key={index} className="rounded-lg overflow-hidden border-4 border-primary/50 shadow-lg shadow-primary/20">
