@@ -45,33 +45,31 @@ export function ProfitSection() {
         </div>
 
         {/* TEXTO CENTRAL (LUCRO) */}
-        <div className="bg-card rounded-lg p-8 max-w-4xl mx-auto border-2 border-accent shadow-2xl shadow-accent/20">
-            <h3 className="text-2xl md:text-4xl font-black uppercase text-accent tracking-wider">Seu Potencial de Lucro é Gigante</h3>
-            <p className="mt-2 text-lg text-foreground/80">A matemática é simples e poderosa.</p>
-
-            <div className="my-8 flex flex-col md:flex-row justify-center items-center gap-4 md:gap-8 text-center">
-                <div className="flex-1">
-                    <p className="text-6xl md:text-8xl font-black text-primary">R$80</p>
-                    <p className="font-bold text-primary text-xl">LUCRO POR CAMISA</p>
-                </div>
-                <div className="text-2xl md:text-4xl font-thin text-accent/50">X</div>
-                <div className="flex-1">
-                    <p className="text-6xl md:text-8xl font-black text-foreground">10</p>
-                    <p className="font-bold text-foreground/80 text-xl">VENDAS POR DIA</p>
-                </div>
-                <div className="text-2xl md:text-4xl font-thin text-accent/50">=</div>
-                <div className="flex-1">
-                    <p className="text-6xl md:text-8xl font-black text-accent">R$800</p>
-                    <p className="font-bold text-accent text-xl">POR DIA</p>
-                </div>
+        <div className="bg-card rounded-lg p-6 md:p-8 max-w-4xl mx-auto border-2 border-accent shadow-2xl shadow-accent/20">
+            <h3 className="text-2xl md:text-3xl font-bold text-foreground">A conta é simples.</h3>
+            
+            <div className="my-6 space-y-2 text-lg md:text-xl text-center max-w-md mx-auto">
+                <p><span className="font-bold text-primary">R$80 de lucro</span> por camisa</p>
+                <p><span className="font-bold">× 10 vendas</span> por dia</p>
+                <p className="border-t border-accent/50 pt-2 mt-2 font-bold text-accent">= R$800 por dia</p>
             </div>
             
-            <p className="text-xl md:text-2xl text-foreground text-balance font-semibold">
-                Isso são <span className="text-primary font-bold">R$24.000 por mês</span> vendendo produtos que todo mundo quer comprar.
+            <p className="text-lg md:text-xl text-foreground text-balance font-medium max-w-3xl mx-auto">
+                Isso pode chegar a <span className="text-primary font-bold">R$24.000 por mês</span> vendendo camisas que milhares de pessoas já estão procurando comprar.
             </p>
-            <p className="mt-4 text-md md:text-lg text-foreground/70 max-w-2xl mx-auto text-balance">
-                Durante a Copa do Mundo a demanda explode. Ter acesso ao fornecedor certo coloca você a um passo de transformar essa oportunidade em lucro real no seu bolso.
-            </p>
+            
+            <div className="mt-8 pt-6 border-t border-white/10 max-w-3xl mx-auto space-y-4 text-md md:text-lg text-foreground/80 text-balance">
+                <p className="font-semibold">E tem um detalhe importante…</p>
+                <p>
+                    Durante a Copa do Mundo, a procura por camisas <span className="font-semibold text-accent">explode</span>.
+                </p>
+                <p>
+                    Quem tem acesso ao fornecedor certo aproveita essa demanda e <span className="text-primary font-semibold">lucra</span>. Quem não tem… assiste os outros venderem.
+                </p>
+                 <p className="text-primary font-bold pt-4 text-lg">
+                    Mais de 3.000 vendedores já estão aproveitando essa oportunidade agora.
+                </p>
+            </div>
         </div>
 
 
