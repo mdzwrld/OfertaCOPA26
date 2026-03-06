@@ -54,12 +54,12 @@ export function ProfitSection() {
                     <p className="text-6xl md:text-8xl font-black text-primary">R$80</p>
                     <p className="font-bold text-primary text-xl">LUCRO POR CAMISA</p>
                 </div>
-                <div className="text-4xl font-thin text-accent/50">X</div>
+                <div className="text-4xl font-thin text-accent/50 hidden md:block">X</div>
                 <div className="flex-1">
                     <p className="text-6xl md:text-8xl font-black text-foreground">10</p>
                     <p className="font-bold text-foreground/80 text-xl">VENDAS POR DIA</p>
                 </div>
-                <div className="text-4xl font-thin text-accent/50">=</div>
+                <div className="text-4xl font-thin text-accent/50 hidden md:block">=</div>
                 <div className="flex-1">
                     <p className="text-6xl md:text-8xl font-black text-accent">R$800</p>
                     <p className="font-bold text-accent text-xl">POR DIA</p>
