@@ -109,15 +109,18 @@ export function Testimonials() {
                     {[getImage('income-proof-1'), getImage('income-proof-2')].map((proof, index) => (
                         proof && (
                             <CarouselItem key={index}>
-                                <div className="rounded-lg overflow-hidden border-4 border-primary/50 shadow-lg shadow-primary/20">
-                                    <Image
-                                        src={proof.imageUrl}
-                                        alt={proof.description}
-                                        width={300}
-                                        height={500}
-                                        className="object-cover"
-                                        data-ai-hint={proof.imageHint}
-                                    />
+                                <div className="flex flex-col items-center">
+                                    <div className="rounded-lg overflow-hidden border-4 border-primary/50 shadow-lg shadow-primary/20">
+                                        <Image
+                                            src={proof.imageUrl}
+                                            alt={proof.description}
+                                            width={300}
+                                            height={proof.id === 'income-proof-1' ? 533 : 500}
+                                            className="object-cover"
+                                            data-ai-hint={proof.imageHint}
+                                        />
+                                    </div>
+                                    <p className="text-sm text-muted-foreground mt-4 max-w-[280px] text-center">Resultados reais de quem aplica o método.</p>
                                 </div>
                             </CarouselItem>
                         )
@@ -127,18 +130,21 @@ export function Testimonials() {
                 <CarouselNext />
             </Carousel>
         </div>
-        <div className="hidden md:flex justify-center gap-8 flex-wrap">
+        <div className="hidden md:flex justify-center gap-8 flex-wrap items-start">
             {[getImage('income-proof-1'), getImage('income-proof-2')].map((proof, index) => (
                 proof && (
-                    <div key={index} className="rounded-lg overflow-hidden border-4 border-primary/50 shadow-lg shadow-primary/20">
-                        <Image
-                            src={proof.imageUrl}
-                            alt={proof.description}
-                            width={300}
-                            height={500}
-                            className="object-cover"
-                            data-ai-hint={proof.imageHint}
-                        />
+                    <div key={index} className="flex flex-col items-center gap-2">
+                        <div className="rounded-lg overflow-hidden border-4 border-primary/50 shadow-lg shadow-primary/20">
+                            <Image
+                                src={proof.imageUrl}
+                                alt={proof.description}
+                                width={300}
+                                height={proof.id === 'income-proof-1' ? 533 : 500}
+                                className="object-cover"
+                                data-ai-hint={proof.imageHint}
+                            />
+                        </div>
+                        <p className="text-sm text-muted-foreground mt-2 text-center">Resultados reais de quem aplica o método.</p>
                     </div>
                 )
             ))}
