@@ -22,7 +22,7 @@ export default function Home() {
                     O Fim das Apostas baseadas na Sorte
                 </h2>
                 <p className="max-w-3xl mx-auto text-lg md:text-xl text-foreground/80 mb-12 text-balance">
-                    Chega de perder dinheiro com palpites incertos. Apresentamos um método comprovado que transforma sua paixão por futebol em uma fonte de renda consistente e previsível.
+                    Chega de perder dinheiro com palpites incertos. Apresentamos um método comprovado que transforma sua paixão por futebol em uma fonte de renda consistente e previsível, seja durante a temporada regular ou em grandes eventos como a Copa do Mundo.
                 </p>
                 <div className="flex justify-center">
                     <CtaButton />
