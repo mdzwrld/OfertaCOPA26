@@ -1,7 +1,7 @@
 import { CheckCircle, CreditCard, Lock, ShieldCheck, Star, Zap } from "lucide-react";
 
 export const navLinks = [
-  { name: "O Método", href: "#metodo" },
+  { name: "Oportunidade", href: "#oportunidade" },
   { name: "Depoimentos", href: "#depoimentos" },
   { name: "Oferta", href: "#oferta" },
 ];
