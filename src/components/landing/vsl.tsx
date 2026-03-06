@@ -1,16 +1,10 @@
 "use client";
 
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { PlayCircle, CheckCircle } from 'lucide-react';
+import { PlayCircle } from 'lucide-react';
 import Image from 'next/image';
 import { CtaButton } from './cta-button';
 import { useState } from 'react';
-
-const microProofs = [
-    "Método simples",
-    "Sem precisar de loja física",
-    "Funciona mesmo começando do zero"
-];
 
 export function Vsl() {
   const thumbnail = PlaceHolderImages.find(img => img.id === 'vsl-thumbnail');
@@ -68,15 +62,6 @@ export function Vsl() {
               </div>
             </>
           )}
-        </div>
-
-        <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-y-4 gap-x-8 max-w-3xl w-full text-center">
-            {microProofs.map((proof, index) => (
-                <div key={index} className="flex items-center justify-center gap-2 text-foreground/90">
-                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />
-                    <span className="font-medium text-sm md:text-base">{proof}</span>
-                </div>
-            ))}
         </div>
 
         <div className="mt-12 flex flex-col items-center gap-2 w-full max-w-md">
