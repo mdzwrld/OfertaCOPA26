@@ -65,7 +65,7 @@ export function Vsl() {
         </div>
 
         <div className="mt-12 flex flex-col items-center gap-2 w-full max-w-md">
-            <CtaButton>QUERO ACESSAR O FORNECEDOR AGORA</CtaButton>
+            <CtaButton>QUERO ACESSAR O FORNECEDOR E COMEÇAR A LUCRAR AGORA</CtaButton>
             <p className="text-sm text-muted-foreground">Acesso imediato após o pagamento.</p>
         </div>
       </div>

@@ -39,7 +39,7 @@ export function Offer() {
 
               <div className="flex justify-center my-8">
                   <CtaButton className="w-full max-w-lg">
-                    QUERO ACESSAR O FORNECEDOR AGORA
+                    QUERO ACESSAR O FORNECEDOR E COMEÇAR A LUCRAR AGORA
                   </CtaButton>
               </div>
             </div>
@@ -58,7 +58,7 @@ export function Offer() {
             
             <div className="flex justify-center my-8">
                 <CtaButton className="w-full max-w-lg">
-                  QUERO ACESSAR O FORNECEDOR AGORA
+                  QUERO ACESSAR O FORNECEDOR E COMEÇAR A LUCRAR AGORA
                 </CtaButton>
             </div>
 
@@ -78,7 +78,7 @@ export function Offer() {
               </div>
               <div className="flex justify-center my-8">
                 <CtaButton className="w-full max-w-lg">
-                  QUERO ACESSAR O FORNECEDOR AGORA
+                  QUERO ACESSAR O FORNECEDOR E COMEÇAR A LUCRAR AGORA
                 </CtaButton>
               </div>
             </div>

@@ -43,7 +43,7 @@ export function Opportunity() {
             </p>
         </div>
         <div className="mt-12 flex flex-col items-center">
-          <CtaButton />
+          <CtaButton>QUERO ACESSAR O FORNECEDOR E COMEÇAR A LUCRAR AGORA</CtaButton>
           <p className="mt-3 text-sm text-muted-foreground">
               Acesso imediato após o pagamento.
           </p>

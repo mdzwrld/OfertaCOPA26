@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { CtaButton } from './cta-button';
+import { Equal, X } from 'lucide-react';
 
 export function ProfitSection() {
   const compraImageUrl = 'https://i.postimg.cc/N0C8DfV8/camisa-brasil-copa-2022-away1-1a2ee6a3d888e1650917193631604996-1024-1024.png';
@@ -46,12 +47,21 @@ export function ProfitSection() {
 
         {/* TEXTO CENTRAL (LUCRO) */}
         <div className="bg-card rounded-lg p-6 md:p-8 max-w-4xl mx-auto border-2 border-accent shadow-2xl shadow-accent/20">
-            <h3 className="text-2xl md:text-3xl font-bold text-foreground">A conta é simples.</h3>
+            <h3 className="text-2xl md:text-3xl font-bold text-foreground">Seu Potencial de Lucro é Gigante</h3>
+            <p className="mt-2 text-lg text-foreground/80">A conta é simples.</p>
             
-            <div className="my-6 space-y-2 text-lg md:text-xl text-center max-w-md mx-auto">
-                <p><span className="font-bold text-primary">R$80 de lucro</span> por camisa</p>
-                <p><span className="font-bold">× 10 vendas</span> por dia</p>
-                <p className="border-t border-accent/50 pt-2 mt-2 font-bold text-accent">= R$800 por dia</p>
+            <div className="my-6 space-y-4 text-lg md:text-xl text-center max-w-md mx-auto">
+              <div className="flex items-center justify-center gap-4">
+                <p><span className="font-bold text-primary text-2xl">R$80 de lucro</span> por camisa</p>
+              </div>
+              <div className="flex items-center justify-center gap-4 text-accent">
+                <X className="w-6 h-6" />
+                <p><span className="font-bold">10 vendas</span> por dia</p>
+              </div>
+              <div className="flex items-center justify-center gap-4 font-bold text-accent text-2xl border-t border-accent/50 pt-4 mt-4">
+                <Equal className="w-6 h-6" />
+                <p>= R$800 por dia</p>
+              </div>
             </div>
             
             <p className="text-lg md:text-xl text-foreground text-balance font-medium max-w-3xl mx-auto">
@@ -72,11 +82,10 @@ export function ProfitSection() {
             </div>
         </div>
 
-
         {/* BOTÃO ABAIXO DA SEÇÃO */}
         <div className="mt-12 flex flex-col items-center">
             <CtaButton>
-                QUERO ACESSAR O FORNECEDOR AGORA
+                QUERO ACESSAR O FORNECEDOR E COMEÇAR A LUCRAR AGORA
             </CtaButton>
             <p className="mt-3 text-sm text-muted-foreground">
                 Acesso imediato após pagamento.

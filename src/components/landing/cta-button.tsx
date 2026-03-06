@@ -12,11 +12,12 @@ export function CtaButton({ children, className, ...props }: CtaButtonProps) {
     <Button
       className={cn(
         'w-full max-w-md text-lg sm:text-xl md:text-2xl font-black uppercase rounded-lg p-6 md:p-8 tracking-wider transform transition-transform hover:scale-105 animate-cta-glow shadow-lg shadow-primary/40',
+        'h-auto text-balance leading-snug',
         className
       )}
       {...props}
     >
-      {children || 'QUERO ACESSAR O FORNECEDOR AGORA'}
+      {children || 'QUERO ACESSAR O FORNECEDOR E COMEÇAR A LUCRAR AGORA'}
     </Button>
   );
 }
