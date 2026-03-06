@@ -31,20 +31,95 @@ export const benefits = [
 
 export const testimonials = [
   {
-    name: "Carlos Andrade",
+    name: "João P.",
     avatarId: "testimonial-1",
-    text: "Nunca pensei que fosse possível ganhar dinheiro com futebol de forma tão consistente. O Futebol Lucrativo PRO mudou meu jogo!",
+    text: "Mano, que loucura. Comprei umas camisas na segunda, anunciei sem nem ter elas em mãos e já vendi 3. O lucro pagou o curso kkk",
   },
   {
-    name: "Juliana Martins",
+    name: "Maria C.",
     avatarId: "testimonial-2",
-    text: "Finalmente um método que funciona de verdade! O suporte é incrível e as estratégias são fáceis de aplicar. Já recuperei o investimento.",
+    text: "Tava com medo de ser golpe, mas o fornecedor é top mesmo. Qualidade absurda das camisas, nem parece importada.",
   },
   {
-    name: "Ricardo Souza",
+    name: "Lucas S.",
     avatarId: "testimonial-3",
-    text: "Estava cético no início, mas os resultados falam por si. É o melhor investimento que fiz esse ano. Recomendo 100%!",
+    text: "Show! Já to fazendo R$ 200 por dia só com a estratégia da Shopee. Valeu demais!",
   },
+  {
+    name: "Ana B.",
+    avatarId: "testimonial-4",
+    text: "O grupo do telegram é ouro puro. A galera se ajuda muito e sempre tem dica nova.",
+  },
+  {
+    name: "Felipe A.",
+    avatarId: "testimonial-5",
+    text: "Pensei que ia ser complicado, mas o passo a passo é muito de boa. Em uma semana já tava com a lojinha no Insta rodando.",
+  },
+  {
+    name: "Bruna M.",
+    avatarId: "testimonial-6",
+    text: "Tô vendendo camisa que nem água no deserto kkkk. Rumo aos 10k/mês!",
+  },
+  {
+      name: "Gabriel R.",
+      avatarId: "testimonial-7",
+      text: "Recuperei o valor do curso na primeira semana. Só digo isso."
+  },
+  {
+      name: "Beatriz L.",
+      avatarId: "testimonial-8",
+      text: "A qualidade dos produtos é surreal. Meus clientes tão amando."
+  },
+  {
+      name: "Matheus F.",
+      avatarId: "testimonial-9",
+      text: "Finalmente larguei meu emprego chato pra viver de futebol. Sonho realizado!"
+  },
+  {
+      name: "Laura P.",
+      avatarId: "testimonial-10",
+      text: "Só com as dicas do Instagram já bati minha meta do mês."
+  },
+  {
+      name: "Rafael G.",
+      avatarId: "testimonial-11",
+      text: "O fornecedor é realmente o segredo. Preço lá embaixo e a qualidade lá em cima."
+  },
+  {
+      name: "Isabella N.",
+      avatarId: "testimonial-12",
+      text: "Se tá na dúvida, só vai. Melhor investimento que fiz."
+  },
+  {
+      name: "Enzo D.",
+      avatarId: "testimonial-13",
+      text: "Vendi 5 camisas do Flamengo em 1 dia. Esse método é absurdo!"
+  },
+  {
+      name: "Sofia T.",
+      avatarId: "testimonial-14",
+      text: "A estratégia de vender sem estoque salvou minha vida. Zero risco."
+  },
+  {
+      name: "Pedro H.",
+      avatarId: "testimonial-15",
+      text: "A galera do suporte é muito gente boa, tiraram todas as minhas dúvidas no começo."
+  },
+  {
+      name: "Clara V.",
+      avatarId: "testimonial-16",
+      text: "Tô lucrando mais que muito amigo meu que fez faculdade. E eu só vendo camisa de time kkkk"
+  },
+  {
+      name: "Daniel J.",
+      avatarId: "testimonial-17",
+      text: "Nunca imaginei que daria pra fazer uma grana extra tão rápido. Superou minhas expectativas!"
+  },
+  {
+      name: "Valentina O.",
+      avatarId: "testimonial-18",
+      text: "As planilhas de gestão são uma mão na roda, me ajudou a organizar tudo."
+  }
 ];
 
 export const offerFeatures = [
