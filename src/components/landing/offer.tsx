@@ -76,6 +76,11 @@ export function Offer() {
                   </div>
                 ))}
               </div>
+              <div className="flex justify-center my-8">
+                <CtaButton className="w-full max-w-lg">
+                  QUERO ACESSAR O FORNECEDOR AGORA
+                </CtaButton>
+              </div>
             </div>
 
             <div className="flex flex-col sm:flex-row justify-around items-center gap-6 mt-10 pt-8 border-t border-border text-sm text-muted-foreground">
