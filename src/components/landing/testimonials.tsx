@@ -4,6 +4,13 @@ import Image from "next/image";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Card, CardContent } from "@/components/ui/card";
 import { Star } from "lucide-react";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 export function Testimonials() {
   const getImage = (id: string) => PlaceHolderImages.find(img => img.id === id);
@@ -19,31 +26,47 @@ export function Testimonials() {
             Veja o que nossos alunos estão dizendo e os resultados que estão alcançando.
           </p>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
-          {testimonials.map((testimonial, index) => {
-            const avatar = getImage(testimonial.avatarId);
-            return (
-              <Card key={index} className="bg-card border-primary/20 flex flex-col items-center text-center p-8">
-                <Avatar className="w-24 h-24 mb-4 border-4 border-primary">
-                  {avatar && <AvatarImage src={avatar.imageUrl} alt={testimonial.name} />}
-                  <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
-                </Avatar>
-                <CardContent className="p-0">
-                  <h3 className="font-bold text-xl text-accent">{testimonial.name}</h3>
-                  <div className="flex justify-center my-2">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="w-5 h-5 text-accent fill-accent" />
-                    ))}
+        
+        <Carousel
+          opts={{
+            align: "start",
+            loop: true,
+          }}
+          className="w-full max-w-xs sm:max-w-xl md:max-w-3xl lg:max-w-5xl xl:max-w-6xl mx-auto"
+        >
+          <CarouselContent className="-ml-4">
+            {testimonials.map((testimonial, index) => {
+              const avatar = getImage(testimonial.avatarId);
+              return (
+                <CarouselItem key={index} className="pl-4 md:basis-1/2 lg:basis-1/3">
+                  <div className="p-1 h-full">
+                    <Card className="bg-card border-primary/20 flex flex-col items-center text-center p-8 h-full">
+                      <Avatar className="w-24 h-24 mb-4 border-4 border-primary">
+                        {avatar && <AvatarImage src={avatar.imageUrl} alt={testimonial.name} />}
+                        <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
+                      </Avatar>
+                      <CardContent className="p-0 flex flex-col flex-grow">
+                        <h3 className="font-bold text-xl text-accent">{testimonial.name}</h3>
+                        <div className="flex justify-center my-2">
+                          {[...Array(5)].map((_, i) => (
+                            <Star key={i} className="w-5 h-5 text-accent fill-accent" />
+                          ))}
+                        </div>
+                        <blockquote className="mt-4 text-foreground/80 italic flex-grow">
+                          <p>"{testimonial.text}"</p>
+                        </blockquote>
+                      </CardContent>
+                    </Card>
                   </div>
-                  <blockquote className="mt-4 text-foreground/80 italic">
-                    <p>"{testimonial.text}"</p>
-                  </blockquote>
-                </CardContent>
-              </Card>
-            );
-          })}
-        </div>
-        <div className="text-center mb-12">
+                </CarouselItem>
+              );
+            })}
+          </CarouselContent>
+          <CarouselPrevious className="hidden sm:flex" />
+          <CarouselNext className="hidden sm:flex" />
+        </Carousel>
+
+        <div className="text-center my-16">
              <h3 className="text-2xl md:text-4xl font-bold text-white">
                 Resultados de Alunos
             </h3>
