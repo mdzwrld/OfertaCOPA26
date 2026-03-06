@@ -6,7 +6,6 @@ import { Offer } from "@/components/landing/offer";
 import { ProfitSection } from "@/components/landing/profit-section";
 import { StickyCta } from "@/components/landing/sticky-cta";
 import { Testimonials } from "@/components/landing/testimonials";
-import { UrgencyCta } from "@/components/landing/urgency-cta";
 import { Vsl } from "@/components/landing/vsl";
 
 export default function Home() {
@@ -16,7 +15,6 @@ export default function Home() {
       <main className="flex-1">
         <Hero />
         <Vsl />
-        <UrgencyCta />
         <Benefits />
         <ProfitSection />
         <Testimonials />
