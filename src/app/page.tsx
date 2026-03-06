@@ -12,8 +12,8 @@ export default function Home() {
       <main className="flex-1">
         <Hero />
         <Vsl />
-        <Testimonials />
         <ProfitSection />
+        <Testimonials />
         <Offer />
         <Opportunity />
       </main>
