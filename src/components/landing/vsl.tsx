@@ -1,19 +1,7 @@
-"use client";
-
-import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { PlayCircle } from 'lucide-react';
-import Image from 'next/image';
 import { CtaButton } from './cta-button';
-import { useState } from 'react';
 
 export function Vsl() {
-  const thumbnail = PlaceHolderImages.find(img => img.id === 'vsl-thumbnail');
-  const [isPlaying, setIsPlaying] = useState(false);
   const videoId = 'sdwXQor-WvE';
-
-  const handlePlay = () => {
-    setIsPlaying(true);
-  };
 
   return (
     <section className="pb-12 md:pb-16">
@@ -27,41 +15,14 @@ export function Vsl() {
         </div>
         
         <div className="relative aspect-video w-full rounded-xl overflow-hidden shadow-2xl shadow-black/50 border-4 border-accent">
-          {isPlaying ? (
-            <>
-              <iframe
-                className="absolute inset-0 w-full h-full"
-                src={`https://www.youtube.com/embed/${videoId}?autoplay=1&controls=0&showinfo=0&rel=0&loop=1&playlist=${videoId}&iv_load_policy=3&modestbranding=1`}
-                title="YouTube video player"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-              ></iframe>
-              <div className="absolute inset-0 w-full h-full"></div>
-            </>
-          ) : (
-            <>
-              {thumbnail && (
-                <Image
-                  src={thumbnail.imageUrl}
-                  alt={thumbnail.description}
-                  fill
-                  className="object-cover cursor-pointer"
-                  data-ai-hint={thumbnail.imageHint}
-                  onClick={handlePlay}
-                />
-              )}
-              <div 
-                className="absolute inset-0 bg-black/40 flex items-center justify-center cursor-pointer"
-                onClick={handlePlay}
-              >
-                <PlayCircle className="w-20 h-20 md:w-32 md:h-32 text-white/70 hover:text-white hover:scale-110 transition-all" />
-              </div>
-              <div className="absolute bottom-4 left-4 bg-red-600 text-white px-2 py-1 text-xs font-bold rounded">
-                AO VIVO
-              </div>
-            </>
-          )}
+          <iframe
+            className="absolute inset-0 w-full h-full"
+            src={`https://www.youtube.com/embed/${videoId}`}
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          ></iframe>
         </div>
 
         <div className="mt-12 flex flex-col items-center gap-2 w-full max-w-md">
