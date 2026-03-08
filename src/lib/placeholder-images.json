@@ -125,6 +125,12 @@
       "description": "Screenshot of income proof",
       "imageUrl": "https://i.postimg.cc/K47qpXXP/image-2026-03-08-025340691.png",
       "imageHint": "phone screen"
+    },
+    {
+      "id": "income-proof-3",
+      "description": "Screenshot of income proof",
+      "imageUrl": "https://i.postimg.cc/5Ydgpgsd/image-2026-03-08-025531471.png",
+      "imageHint": "phone screen"
     }
   ]
 }

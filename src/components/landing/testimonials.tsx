@@ -106,7 +106,7 @@ export function Testimonials() {
                 className="w-full max-w-xs mx-auto"
             >
                 <CarouselContent>
-                    {[getImage('income-proof-1'), getImage('income-proof-2')].map((proof, index) => (
+                    {[getImage('income-proof-1'), getImage('income-proof-2'), getImage('income-proof-3')].map((proof, index) => (
                         proof && (
                             <CarouselItem key={index}>
                                 <div className="flex flex-col items-center">
@@ -115,7 +115,7 @@ export function Testimonials() {
                                             src={proof.imageUrl}
                                             alt={proof.description}
                                             width={300}
-                                            height={proof.id === 'income-proof-1' ? 533 : 500}
+                                            height={proof.id === 'income-proof-2' ? 500 : 533}
                                             className="object-cover"
                                             data-ai-hint={proof.imageHint}
                                         />
@@ -131,7 +131,7 @@ export function Testimonials() {
             </Carousel>
         </div>
         <div className="hidden md:flex justify-center gap-8 flex-wrap items-start">
-            {[getImage('income-proof-1'), getImage('income-proof-2')].map((proof, index) => (
+            {[getImage('income-proof-1'), getImage('income-proof-2'), getImage('income-proof-3')].map((proof, index) => (
                 proof && (
                     <div key={index} className="flex flex-col items-center gap-2">
                         <div className="rounded-lg overflow-hidden border-4 border-primary/50 shadow-lg shadow-primary/20">
@@ -139,7 +139,7 @@ export function Testimonials() {
                                 src={proof.imageUrl}
                                 alt={proof.description}
                                 width={300}
-                                height={proof.id === 'income-proof-1' ? 533 : 500}
+                                height={proof.id === 'income-proof-2' ? 500 : 533}
                                 className="object-cover"
                                 data-ai-hint={proof.imageHint}
                             />
