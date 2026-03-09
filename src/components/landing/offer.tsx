@@ -21,7 +21,7 @@ export function Offer() {
               <div className="text-center mb-6">
                   <p className="text-lg text-muted-foreground">De <s className="line-through">R$297,00</s> por apenas</p>
                   <p className="text-6xl md:text-8xl font-black text-primary my-2">
-                      R$37,90
+                      R$27,90
                   </p>
                   <p className="font-semibold">Pagamento único • Acesso imediato</p>
               </div>
