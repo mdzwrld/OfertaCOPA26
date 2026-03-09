@@ -1,8 +1,6 @@
 import { CtaButton } from './cta-button';
 
 export function Vsl() {
-  const videoId = 'sdwXQor-WvE';
-
   return (
     <section className="pb-12 md:pb-16">
       <div className="container mx-auto max-w-5xl flex flex-col items-center">
@@ -14,15 +12,18 @@ export function Vsl() {
             </p>
         </div>
         
-        <div className="relative aspect-video w-full rounded-xl overflow-hidden shadow-2xl shadow-black/50 border-4 border-accent">
-          <iframe
-            className="absolute inset-0 w-full h-full"
-            src={`https://www.youtube.com/embed/${videoId}`}
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen
-          ></iframe>
+        <div className="relative aspect-video w-full rounded-xl overflow-hidden shadow-2xl shadow-black/50 border-4 border-accent bg-black">
+          <video
+            className="absolute inset-0 w-full h-full object-cover"
+            src="/video principal.mp4"
+            controls
+            autoPlay
+            muted
+            loop
+            playsInline
+          >
+            Seu navegador não suporta a tag de vídeo.
+          </video>
         </div>
 
         <div className="mt-12 flex flex-col items-center gap-2 w-full max-w-md">
