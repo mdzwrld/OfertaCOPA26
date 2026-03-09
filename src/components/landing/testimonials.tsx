@@ -1,7 +1,7 @@
 "use client"
 
 import * as React from "react"
-import Autoplay from "embla-carousel-react-autoplay"
+import Autoplay from "embla-carousel-autoplay"
 import { testimonials } from "@/lib/data";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import Image from "next/image";
