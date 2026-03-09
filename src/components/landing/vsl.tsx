@@ -15,7 +15,7 @@ export function Vsl() {
         <div className="relative aspect-video w-full rounded-xl overflow-hidden shadow-2xl shadow-black/50 border-4 border-accent bg-black">
           <video
             className="absolute inset-0 w-full h-full object-cover"
-            src="/video principal.mp4"
+            src="/video-principal.mp4"
             controls
             autoPlay
             muted
