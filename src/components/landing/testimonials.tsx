@@ -72,8 +72,8 @@ export function Testimonials() {
               );
             })}
           </CarouselContent>
-          <CarouselPrevious className="hidden sm:flex" />
-          <CarouselNext className="hidden sm:flex" />
+          <CarouselPrevious className="flex -left-4 sm:-left-12" />
+          <CarouselNext className="flex -right-4 sm:-right-12" />
         </Carousel>
 
         <div className="my-16 md:my-24 max-w-3xl mx-auto text-center p-6 md:p-8 bg-background border border-border rounded-lg shadow-lg">
@@ -145,8 +145,8 @@ export function Testimonials() {
                         )
                     ))}
                 </CarouselContent>
-                <CarouselPrevious />
-                <CarouselNext />
+                <CarouselPrevious className="-left-4" />
+                <CarouselNext className="-right-4" />
             </Carousel>
         </div>
         <div className="hidden md:flex justify-center gap-8 flex-wrap items-start">
