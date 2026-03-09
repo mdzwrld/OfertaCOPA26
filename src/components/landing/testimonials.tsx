@@ -1,3 +1,7 @@
+"use client"
+
+import * as React from "react"
+import Autoplay from "embla-carousel-react-autoplay"
 import { testimonials } from "@/lib/data";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import Image from "next/image";
@@ -14,6 +18,9 @@ import {
 
 export function Testimonials() {
   const getImage = (id: string) => PlaceHolderImages.find(img => img.id === id);
+  const plugin = React.useRef(
+    Autoplay({ delay: 2500, stopOnInteraction: true })
+  );
 
   return (
     <section id="depoimentos" className="py-12 md:py-24 bg-card/50">
@@ -28,11 +35,14 @@ export function Testimonials() {
         </div>
         
         <Carousel
+          plugins={[plugin.current]}
           opts={{
             align: "start",
             loop: true,
           }}
           className="w-full max-w-xs sm:max-w-xl md:max-w-3xl lg:max-w-5xl xl:max-w-6xl mx-auto"
+          onMouseEnter={plugin.current.stop}
+          onMouseLeave={plugin.current.reset}
         >
           <CarouselContent className="-ml-4">
             {testimonials.map((testimonial, index) => {
