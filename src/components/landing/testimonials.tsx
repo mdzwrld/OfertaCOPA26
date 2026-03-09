@@ -78,9 +78,17 @@ export function Testimonials() {
               Por isso eu incluí um bônus ensinando como vender usando:
             </p>
             <div className="flex flex-wrap justify-center items-center gap-4 my-6 text-lg">
-              <span className="bg-primary/10 text-primary font-bold px-6 py-3 rounded-lg border border-primary/20 shadow-lg shadow-primary/10 transition-transform hover:scale-105">Shopee</span>
-              <span className="bg-primary/10 text-primary font-bold px-6 py-3 rounded-lg border border-primary/20 shadow-lg shadow-primary/10 transition-transform hover:scale-105">TikTok</span>
-              <span className="bg-primary/10 text-primary font-bold px-6 py-3 rounded-lg border border-primary/20 shadow-lg shadow-primary/10 transition-transform hover:scale-105">Instagram</span>
+              <span className="bg-primary/10 text-primary font-bold px-6 py-3 rounded-lg border border-primary/20 shadow-lg shadow-primary/10 transition-transform hover:scale-105 flex items-center justify-center">
+                <Image src="https://i.postimg.cc/sgh8Z3YZ/icone-shoppe.png" alt="Shopee" width={100} height={25} className="object-contain" />
+              </span>
+              <span className="bg-primary/10 text-primary font-bold px-6 py-3 rounded-lg border border-primary/20 shadow-lg shadow-primary/10 transition-transform hover:scale-105 flex items-center gap-2">
+                <Image src="https://i.postimg.cc/jjY1HBcp/tik-tok-icon-circle-11609379404aavrbp7kqt.png" alt="TikTok" width={24} height={24} className="object-contain" />
+                <span>TikTok</span>
+              </span>
+              <span className="bg-primary/10 text-primary font-bold px-6 py-3 rounded-lg border border-primary/20 shadow-lg shadow-primary/10 transition-transform hover:scale-105 flex items-center gap-2">
+                <Image src="https://i.postimg.cc/XJVDhFTq/283-2831746-insta-icon-instagram.png" alt="Instagram" width={24} height={24} className="object-contain rounded-md" />
+                <span>Instagram</span>
+              </span>
             </div>
             <p className="text-lg text-foreground/80 text-balance">
               Plataformas que já têm milhões de pessoas procurando produtos todos os dias.
