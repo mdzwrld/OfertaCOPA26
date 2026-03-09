@@ -83,6 +83,10 @@ export function Testimonials() {
                 <span>Shopee</span>
               </span>
               <span className="bg-primary/10 text-primary font-bold px-6 py-3 rounded-lg border border-primary/20 shadow-lg shadow-primary/10 transition-transform hover:scale-105 flex items-center gap-2">
+                <Image src="https://i.postimg.cc/YqWKQN75/tik-tok-icon-circle-11609379404aavrbp7kqt.png" alt="TikTok" width={24} height={24} className="object-contain rounded-full" />
+                <span>TikTok</span>
+              </span>
+              <span className="bg-primary/10 text-primary font-bold px-6 py-3 rounded-lg border border-primary/20 shadow-lg shadow-primary/10 transition-transform hover:scale-105 flex items-center gap-2">
                 <Image src="https://i.postimg.cc/XJVDhFTq/283-2831746-insta-icon-instagram.png" alt="Instagram" width={24} height={24} className="object-contain rounded-md" />
                 <span>Instagram</span>
               </span>
