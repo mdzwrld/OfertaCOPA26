@@ -3,11 +3,9 @@ import { CheckCircle } from "lucide-react";
 const exclusiveBenefits = [
   "Fornecedor secreto de produtos de futebol",
   "Passo a passo de importação",
-  "Produtos campeões de venda",
   "Estratégia para vender rápido",
   "Como vender no Instagram",
   "Como vender na Shopee",
-  "Como vender no Mercado Livre",
 ];
 
 export function Benefits() {
