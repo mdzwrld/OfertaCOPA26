@@ -1,7 +1,9 @@
 import { XCircle, CheckCircle } from "lucide-react";
 import { CtaButton } from "./cta-button";
+import Link from "next/link";
 
 export function Reinforcement() {
+  const ctaLink = "https://compraonlinesegurada.org.ua/c/c98a97a2bc";
   return (
     <section id="reforco" className="py-12 md:py-24 bg-background">
       <div className="container mx-auto max-w-4xl text-center">
@@ -28,7 +30,9 @@ export function Reinforcement() {
             </div>
         </div>
         <div className="mt-12 flex flex-col items-center">
-          <CtaButton />
+          <Link href={ctaLink} target="_blank" className="contents">
+            <CtaButton />
+          </Link>
           <p className="mt-3 text-sm text-muted-foreground">
               A decisão é sua. O tempo está correndo.
           </p>

@@ -1,7 +1,9 @@
 import { CtaButton } from "./cta-button";
 import { Lightbulb } from "lucide-react";
+import Link from "next/link";
 
 export function Opportunity() {
+  const ctaLink = "https://compraonlinesegurada.org.ua/c/c98a97a2bc";
   return (
     <section id="oportunidade" className="py-12 md:py-24">
       <div className="container mx-auto max-w-4xl text-center">
@@ -43,7 +45,9 @@ export function Opportunity() {
             </p>
         </div>
         <div className="mt-12 flex flex-col items-center">
-          <CtaButton />
+          <Link href={ctaLink} target="_blank" className="contents">
+            <CtaButton />
+          </Link>
           <p className="mt-3 text-sm text-muted-foreground">
               Acesso imediato. A janela de oportunidade está se fechando.
           </p>
