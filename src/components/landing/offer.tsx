@@ -2,8 +2,10 @@ import { Check, Gift, Lightbulb, Timer } from "lucide-react";
 import { exclusiveBonuses, offerFeatures, reassuranceIcons } from "@/lib/data";
 import { Card, CardContent, CardDescription, CardHeader } from "@/components/ui/card";
 import { CtaButton } from "./cta-button";
+import Link from "next/link";
 
 export function Offer() {
+  const ctaLink = "https://compraonlinesegurada.org.ua/c/c98a97a2bc";
   return (
     <section id="oferta" className="py-12 md:py-24 bg-background">
       <div className="container mx-auto max-w-4xl">
@@ -38,9 +40,11 @@ export function Offer() {
               </div>
 
               <div className="flex justify-center my-8">
-                  <CtaButton className="w-full max-w-lg">
-                    QUERO LUCRAR ALTO ANTES DA COPA
-                  </CtaButton>
+                  <Link href={ctaLink} target="_blank" className="contents">
+                    <CtaButton className="w-full max-w-lg">
+                      QUERO LUCRAR ALTO ANTES DA COPA
+                    </CtaButton>
+                  </Link>
               </div>
             </div>
 
@@ -57,9 +61,11 @@ export function Offer() {
             </div>
             
             <div className="flex justify-center my-8">
-                <CtaButton className="w-full max-w-lg">
-                  QUERO LUCRAR ALTO ANTES DA COPA
-                </CtaButton>
+                <Link href={ctaLink} target="_blank" className="contents">
+                  <CtaButton className="w-full max-w-lg">
+                    QUERO LUCRAR ALTO ANTES DA COPA
+                  </CtaButton>
+                </Link>
             </div>
 
             <div className="my-12 pt-8 border-t border-border">
@@ -77,9 +83,11 @@ export function Offer() {
                 ))}
               </div>
               <div className="flex justify-center my-8">
-                <CtaButton className="w-full max-w-lg">
-                  QUERO LUCRAR ALTO ANTES DA COPA
-                </CtaButton>
+                <Link href={ctaLink} target="_blank" className="contents">
+                  <CtaButton className="w-full max-w-lg">
+                    QUERO LUCRAR ALTO ANTES DA COPA
+                  </CtaButton>
+                </Link>
               </div>
             </div>
 
