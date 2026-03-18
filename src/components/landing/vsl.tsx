@@ -27,7 +27,9 @@ export function Vsl() {
         </div>
 
         <div className="mt-12 flex flex-col items-center gap-2 w-full max-w-md">
-            <CtaButton />
+            <a href="#oferta" className="contents">
+                <CtaButton />
+            </a>
             <p className="text-sm text-muted-foreground">Acesso imediato após o pagamento.</p>
         </div>
       </div>

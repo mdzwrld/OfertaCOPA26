@@ -30,7 +30,7 @@ export function Testimonials() {
             Prova Social Real
           </h2>
           <p className="max-w-2xl mx-auto mt-4 text-lg text-foreground/80">
-            Veja o que nossos alunos estão dizendo e os resultados que estão alcançando.
+            Veja o que nossos alunos estão dizendo e os resultados que estão alcançando AGORA.
           </p>
         </div>
         
@@ -50,7 +50,7 @@ export function Testimonials() {
               return (
                 <CarouselItem key={index} className="pl-4 md:basis-1/2 lg:basis-1/3">
                   <div className="p-1 h-full">
-                    <Card className="bg-card border-primary/20 flex flex-col items-center text-center p-8 h-full">
+                    <Card className="bg-card border-primary/20 flex flex-col items-center text-center p-8 h-full transition-transform duration-300 hover:scale-105 hover:shadow-primary/20 hover:shadow-lg">
                       <Avatar className="w-24 h-24 mb-4 border-4 border-primary">
                         {avatar && <AvatarImage src={avatar.imageUrl} alt={testimonial.name} />}
                         <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
@@ -72,8 +72,8 @@ export function Testimonials() {
               );
             })}
           </CarouselContent>
-          <CarouselPrevious className="-left-4 sm:-left-12" />
-          <CarouselNext className="-right-4 sm:-right-12" />
+          <CarouselPrevious className="sm:-left-12" />
+          <CarouselNext className="sm:-right-12" />
         </Carousel>
 
         <div className="my-16 md:my-24 max-w-3xl mx-auto text-center p-6 md:p-8 bg-background border border-border rounded-lg shadow-lg">
@@ -93,7 +93,7 @@ export function Testimonials() {
                 <span>Shopee</span>
               </span>
               <span className="bg-primary/10 text-primary font-bold px-6 py-3 rounded-lg border border-primary/20 shadow-lg shadow-primary/10 transition-transform hover:scale-105 flex items-center gap-2">
-                <Image src="https://i.postimg.cc/YqWKQN75/tik-tok-icon-circle-11609379404aavrbp7kqt.png" alt="TikTok" width={24} height={24} className="object-contain rounded-full" />
+                <a href='https://postimg.cc/PPTRjwPy' target='_blank'><img src='https://i.postimg.cc/YqWKQN75/tik-tok-icon-circle-11609379404aavrbp7kqt.png' border='0' alt='tik-tok-icon-circle-11609379404aavrbp7kqt'/></a>
                 <span>TikTok</span>
               </span>
               <span className="bg-primary/10 text-primary font-bold px-6 py-3 rounded-lg border border-primary/20 shadow-lg shadow-primary/10 transition-transform hover:scale-105 flex items-center gap-2">
@@ -108,21 +108,24 @@ export function Testimonials() {
               Você só precisa saber como aparecer na frente delas.
             </p>
             <p className="text-xl font-bold text-accent text-balance pt-2">
-              E é exatamente isso que você aprende.
+              E é exatamente isso que você aprende. AGORA.
             </p>
           </div>
         </div>
 
         <div className="text-center mb-16">
              <h3 className="text-2xl md:text-4xl font-bold text-white">
-                Resultados de Alunos
+                Resultados REAIS de Alunos
             </h3>
         </div>
         
         <div className="md:hidden">
             <Carousel
+                plugins={[plugin.current]}
                 opts={{ align: "center", loop: true }}
                 className="w-full max-w-xs mx-auto"
+                onMouseEnter={plugin.current.stop}
+                onMouseLeave={plugin.current.reset}
             >
                 <CarouselContent>
                     {[getImage('income-proof-1'), getImage('income-proof-2'), getImage('income-proof-3')].map((proof, index) => (
@@ -139,14 +142,14 @@ export function Testimonials() {
                                             data-ai-hint={proof.imageHint}
                                         />
                                     </div>
-                                    <p className="text-sm text-muted-foreground mt-4 max-w-[280px] text-center">Resultados reais de quem aplica o método.</p>
+                                    <p className="text-sm text-muted-foreground mt-4 max-w-[280px] text-center">Resultados reais de quem aplica o método AGORA.</p>
                                 </div>
                             </CarouselItem>
                         )
                     ))}
                 </CarouselContent>
-                <CarouselPrevious className="-left-4" />
-                <CarouselNext className="-right-4" />
+                <CarouselPrevious />
+                <CarouselNext />
             </Carousel>
         </div>
         <div className="hidden md:flex justify-center gap-8 flex-wrap items-start">
@@ -163,7 +166,7 @@ export function Testimonials() {
                                 data-ai-hint={proof.imageHint}
                             />
                         </div>
-                        <p className="text-sm text-muted-foreground mt-2 text-center">Resultados reais de quem aplica o método.</p>
+                        <p className="text-sm text-muted-foreground mt-2 text-center">Resultados reais de quem aplica o método AGORA.</p>
                     </div>
                 )
             ))}

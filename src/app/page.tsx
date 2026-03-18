@@ -1,3 +1,4 @@
+import { Benefits } from "@/components/landing/benefits";
 import { Faq } from "@/components/landing/faq";
 import { Footer } from "@/components/landing/footer";
 import { Hero } from "@/components/landing/hero";
@@ -16,6 +17,7 @@ export default function Home() {
         <Vsl />
         <ProfitSection />
         <Testimonials />
+        <Benefits />
         <Offer />
         <Opportunity />
         <Faq />
