@@ -93,7 +93,7 @@ export function Testimonials() {
                 <span>Shopee</span>
               </span>
               <span className="bg-primary/10 text-primary font-bold px-6 py-3 rounded-lg border border-primary/20 shadow-lg shadow-primary/10 transition-transform hover:scale-105 flex items-center gap-2">
-                <a href='https://postimg.cc/PPTRjwPy' target='_blank'><img src='https://i.postimg.cc/YqWKQN75/tik-tok-icon-circle-11609379404aavrbp7kqt.png' border='0' alt='tik-tok-icon-circle-11609379404aavrbp7kqt'/></a>
+                <Image src='https://i.postimg.cc/YqWKQN75/tik-tok-icon-circle-11609379404aavrbp7kqt.png' alt='TikTok' width={24} height={24} className="object-contain" />
                 <span>TikTok</span>
               </span>
               <span className="bg-primary/10 text-primary font-bold px-6 py-3 rounded-lg border border-primary/20 shadow-lg shadow-primary/10 transition-transform hover:scale-105 flex items-center gap-2">
@@ -119,39 +119,37 @@ export function Testimonials() {
             </h3>
         </div>
         
-        <div className="md:hidden">
-            <Carousel
-                plugins={[plugin.current]}
-                opts={{ align: "center", loop: true }}
-                className="w-full max-w-xs mx-auto"
-                onMouseEnter={plugin.current.stop}
-                onMouseLeave={plugin.current.reset}
-            >
-                <CarouselContent>
-                    {[getImage('income-proof-1'), getImage('income-proof-2'), getImage('income-proof-3')].map((proof, index) => (
-                        proof && (
-                            <CarouselItem key={index}>
-                                <div className="flex flex-col items-center">
-                                    <div className="rounded-lg overflow-hidden border-4 border-primary/50 shadow-lg shadow-primary/20">
-                                        <Image
-                                            src={proof.imageUrl}
-                                            alt={proof.description}
-                                            width={300}
-                                            height={proof.id === 'income-proof-2' ? 500 : 533}
-                                            className="object-cover"
-                                            data-ai-hint={proof.imageHint}
-                                        />
-                                    </div>
-                                    <p className="text-sm text-muted-foreground mt-4 max-w-[280px] text-center">Resultados reais de quem aplica o método AGORA.</p>
+        <Carousel
+            plugins={[plugin.current]}
+            opts={{ align: "center", loop: true }}
+            className="w-full max-w-xs mx-auto md:hidden"
+            onMouseEnter={plugin.current.stop}
+            onMouseLeave={plugin.current.reset}
+        >
+            <CarouselContent>
+                {[getImage('income-proof-1'), getImage('income-proof-2'), getImage('income-proof-3')].map((proof, index) => (
+                    proof && (
+                        <CarouselItem key={index}>
+                            <div className="flex flex-col items-center">
+                                <div className="rounded-lg overflow-hidden border-4 border-primary/50 shadow-lg shadow-primary/20">
+                                    <Image
+                                        src={proof.imageUrl}
+                                        alt={proof.description}
+                                        width={300}
+                                        height={proof.id === 'income-proof-2' ? 500 : 533}
+                                        className="object-cover"
+                                        data-ai-hint={proof.imageHint}
+                                    />
                                 </div>
-                            </CarouselItem>
-                        )
-                    ))}
-                </CarouselContent>
-                <CarouselPrevious />
-                <CarouselNext />
-            </Carousel>
-        </div>
+                                <p className="text-sm text-muted-foreground mt-4 max-w-[280px] text-center">Resultados reais de quem aplica o método AGORA.</p>
+                            </div>
+                        </CarouselItem>
+                    )
+                ))}
+            </CarouselContent>
+            <CarouselPrevious className="flex sm:flex" />
+            <CarouselNext className="flex sm:flex" />
+        </Carousel>
         <div className="hidden md:flex justify-center gap-8 flex-wrap items-start">
             {[getImage('income-proof-1'), getImage('income-proof-2'), getImage('income-proof-3')].map((proof, index) => (
                 proof && (
