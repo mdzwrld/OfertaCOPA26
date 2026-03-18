@@ -9,43 +9,43 @@ export function Opportunity() {
             <Lightbulb className="w-16 h-16 text-accent animate-pulse" />
         </div>
         <h2 className="text-3xl md:text-5xl font-black text-accent uppercase tracking-wider mb-8">
-          Por que essa oportunidade existe?
+          A janela de oportunidade está aberta... por pouco tempo.
         </h2>
         <div className="max-w-3xl mx-auto space-y-6 text-lg md:text-xl text-foreground/80 text-balance">
             <p className="text-2xl md:text-3xl font-bold text-white">A verdade é simples.</p>
             <p>
-                Grandes fornecedores produzem milhares de camisas todos os meses para lojas e revendedores.
+                Grandes fornecedores produzem milhares de camisas todos os meses. Antes da Copa, essa produção se intensifica.
             </p>
             <p>
-                Mas muitos desses produtos também acabam sendo revendidos diretamente por pessoas comuns na internet.
+                Muitos desses produtos são revendidos por pessoas comuns na internet, com lucros altíssimos.
             </p>
             <p className="font-semibold text-primary bg-primary/10 p-4 rounded-md">
-                A diferença é que quem tem acesso ao fornecedor certo consegue comprar muito mais barato.
+                O segredo? Quem tem acesso ao fornecedor certo compra muito mais barato e sai na frente.
             </p>
             <p>
-                Enquanto a maioria paga caro em lojas ou intermediários… Alguns vendedores compram direto do fornecedor e revendem com uma alta margem de lucro.
+                Enquanto a maioria paga caro em lojas... Vendedores espertos compram direto da fonte e revendem com uma margem de lucro absurda.
             </p>
             <p className="font-bold text-white text-xl md:text-2xl pt-4">
-                Foi exatamente isso que organizamos neste método.
+                Nós organizamos tudo para você.
             </p>
             <p>
-                Você recebe acesso ao fornecedor, aprende como comprar pelo menor preço e como revender usando a internet.
+                Você recebe acesso ao fornecedor, aprende a comprar pelo menor preço e as estratégias para revender antes de todo mundo.
             </p>
             <div className="pt-6">
                 <p className="font-black text-2xl text-accent tracking-wider">Não é sorte.</p>
-                <p className="font-black text-2xl text-accent tracking-wider">Não é promessa milagrosa.</p>
+                <p className="font-black text-2xl text-accent tracking-wider">É estratégia e timing.</p>
             </div>
             <p className="text-xl md:text-2xl font-medium pt-2">
-                É simplesmente entender <span className="text-white font-semibold">onde comprar barato</span> e vender pelo preço que o mercado já paga.
+                É simplesmente ter a informação certa <span className="text-white font-semibold">na hora certa</span>.
             </p>
             <p className="font-bold text-primary pt-6 text-xl md:text-2xl">
-                E é exatamente isso que milhares de vendedores já estão fazendo hoje.
+                A hora é AGORA. Milhares já estão lucrando e a concorrência só aumenta.
             </p>
         </div>
         <div className="mt-12 flex flex-col items-center">
-          <CtaButton>QUERO ACESSAR O FORNECEDOR E COMEÇAR A LUCRAR AGORA</CtaButton>
+          <CtaButton />
           <p className="mt-3 text-sm text-muted-foreground">
-              Acesso imediato após o pagamento.
+              Acesso imediato. A janela de oportunidade está se fechando.
           </p>
         </div>
       </div>

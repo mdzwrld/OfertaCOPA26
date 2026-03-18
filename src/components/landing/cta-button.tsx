@@ -17,7 +17,7 @@ export function CtaButton({ children, className, ...props }: CtaButtonProps) {
       )}
       {...props}
     >
-      {children || 'QUERO ACESSAR O FORNECEDOR E COMEÇAR A LUCRAR AGORA'}
+      {children || 'QUERO LUCRAR ALTO ANTES DA COPA'}
     </Button>
   );
 }

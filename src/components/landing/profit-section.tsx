@@ -65,30 +65,28 @@ export function ProfitSection() {
             </div>
             
             <p className="text-lg md:text-xl text-foreground text-balance font-medium max-w-3xl mx-auto">
-                Isso pode chegar a <span className="text-primary font-bold">R$24.000 por mês</span> vendendo camisas que milhares de pessoas já estão procurando comprar.
+                Isso pode chegar a <span className="text-primary font-bold">R$24.000 por mês</span> vendendo camisas que milhares de pessoas já estão procurando.
             </p>
             
             <div className="mt-8 pt-6 border-t border-white/10 max-w-3xl mx-auto space-y-4 text-md md:text-lg text-foreground/80 text-balance">
-                <p className="font-semibold">E tem um detalhe importante…</p>
+                <p className="font-semibold">E tem um detalhe crucial…</p>
                 <p>
-                    Durante a Copa do Mundo, a procura por camisas <span className="font-semibold text-accent">explode</span>.
+                    A Copa do Mundo está chegando e a demanda por camisas vai <span className="font-semibold text-accent">EXPLODIR</span>.
                 </p>
                 <p>
-                    Quem tem acesso ao fornecedor certo aproveita essa demanda e <span className="text-primary font-semibold">lucra</span>. Quem não tem… assiste os outros venderem.
+                    Quem tem acesso ao fornecedor certo aproveita essa demanda e <span className="text-primary font-semibold">lucra como nunca</span>. Quem não tem… assiste os outros venderem.
                 </p>
                  <p className="text-primary font-bold pt-4 text-lg">
-                    Mais de 3.000 vendedores já estão aproveitando essa oportunidade agora.
+                    Mais de 3.000 vendedores já saíram na frente e estão aproveitando agora.
                 </p>
             </div>
         </div>
 
         {/* BOTÃO ABAIXO DA SEÇÃO */}
         <div className="mt-12 flex flex-col items-center">
-            <CtaButton>
-                QUERO ACESSAR O FORNECEDOR E COMEÇAR A LUCRAR AGORA
-            </CtaButton>
+            <CtaButton />
             <p className="mt-3 text-sm text-muted-foreground">
-                Acesso imediato após pagamento.
+                Acesso imediato. Risco zero.
             </p>
         </div>
 

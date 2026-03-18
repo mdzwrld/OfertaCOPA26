@@ -126,17 +126,16 @@ export const offerFeatures = [
   "Acesso completo ao Método Futebol Lucrativo",
   "Lista de fornecedores verificados para comprar barato",
   "Planilha simples para calcular lucro em cada venda",
-  "Grupo VIP com vendedores ativos para trocar um NETWORKING",
-  "Suporte para tirar dúvidas",
-  "Atualizações gratuitas do conteúdo",
+  "Grupo VIP com vendedores para networking e estratégias de última hora",
+  "Suporte para tirar dúvidas e acelerar seus resultados",
+  "Atualizações gratuitas e vitalícias do conteúdo",
 ];
 
 export const exclusiveBonuses = [
-  "Como vender camisas na Shopee passo a passo",
-  "Estratégia para vender usando TikTok Shop",
-  "Como vender todos os dias pelo Instagram",
-  "Mentalidade de vendedor lucrativo",
-  "Estratégia simples para conseguir as primeiras vendas rápidas",
+  "Como vender na Shopee (passo a passo para iniciantes)",
+  "Estratégia para vender usando TikTok e Instagram",
+  "O segredo da mentalidade de um vendedor lucrativo",
+  "Estratégia de Vendas Rápidas para lucrar em 24h",
 ];
 
 export const reassuranceIcons = [
@@ -161,7 +160,7 @@ export const faqItems = [
   },
   {
     question: "Como vou receber o acesso?",
-    answer: "O acesso é liberado imediatamente após a confirmação do pagamento. Você receberá um e-mail com todas as instruções para acessar a área de membros."
+    answer: "O acesso é liberado imediatamente após a confirmação do pagamento. Você receberá um e-mail com todas as instruções para acessar a área de membros e já começar a lucrar."
   },
   {
     question: "Os produtos são originais?",
@@ -169,11 +168,11 @@ export const faqItems = [
   },
   {
     question: "Preciso de muito dinheiro para começar?",
-    answer: "Não! Você pode começar com pouquíssimo investimento. Ensinamos estratégias para vender sob demanda, onde você primeiro vende o produto para depois comprá-lo, eliminando a necessidade de ter um estoque inicial."
+    answer: "Não! Você pode começar hoje com pouquíssimo investimento. Ensinamos estratégias para vender sob demanda (sem estoque), eliminando a necessidade de comprar produtos antes da hora."
   },
   {
     question: "E se eu não gostar?",
-    answer: "Seu risco é zero. Você tem uma garantia incondicional de 7 dias. Se por qualquer motivo você não ficar satisfeito, basta nos enviar um e-mail e nós devolveremos 100% do seu dinheiro, sem perguntas."
+    answer: "Seu risco é zero. Você tem uma garantia incondicional de 7 dias. Se por qualquer motivo você não ficar satisfeito com o potencial de lucro, basta nos enviar um e-mail e nós devolveremos 100% do seu dinheiro, sem perguntas. Você não tem nada a perder."
   },
   {
     question: "O pagamento é seguro?",

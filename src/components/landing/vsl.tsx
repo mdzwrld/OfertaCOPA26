@@ -6,9 +6,9 @@ export function Vsl() {
       <div className="container mx-auto max-w-5xl flex flex-col items-center">
         
         <div className="text-center mb-6">
-            <p className="font-black text-2xl uppercase text-red-500 animate-pulse tracking-wider">Assista antes que o preço suba</p>
+            <p className="font-black text-2xl uppercase text-red-500 animate-pulse tracking-wider">ASSISTA ISSO URGENTE!</p>
             <p className="mt-3 max-w-2xl mx-auto text-foreground/80 text-balance">
-                Assista a este vídeo rápido. Porque quando a Copa começar, esses produtos simplesmente desaparecem das lojas. E quem tem acesso ao fornecedor lucra primeiro.
+                A Copa está virando a esquina e o estoque de camisas vai esgotar. Assista e descubra como garantir seu lucro antes que seja tarde demais.
             </p>
         </div>
         
@@ -27,7 +27,7 @@ export function Vsl() {
         </div>
 
         <div className="mt-12 flex flex-col items-center gap-2 w-full max-w-md">
-            <CtaButton>QUERO ACESSAR O FORNECEDOR E COMEÇAR A LUCRAR AGORA</CtaButton>
+            <CtaButton />
             <p className="text-sm text-muted-foreground">Acesso imediato após o pagamento.</p>
         </div>
       </div>

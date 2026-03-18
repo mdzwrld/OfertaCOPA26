@@ -13,7 +13,7 @@ export function Offer() {
               Sua Chance de Virar o Jogo
             </h2>
             <CardDescription className="max-w-2xl mx-auto text-lg text-foreground/80 mt-4 text-balance">
-              Tenha acesso imediato ao método completo + fornecedor verificado usado por vendedores que estão lucrando revendendo camisas online.
+              Tenha acesso imediato ao método completo + fornecedor verificado usado por vendedores que estão lucrando alto revendendo camisas online.
             </CardDescription>
           </CardHeader>
           <CardContent className="p-6 md:p-8">
@@ -23,23 +23,23 @@ export function Offer() {
                   <p className="text-6xl md:text-8xl font-black text-primary my-2">
                       R$27,90
                   </p>
-                  <p className="font-semibold">Pagamento único • Acesso imediato</p>
+                  <p className="font-semibold">Pagamento único • Acesso vitalício imediato</p>
               </div>
               
               <div className="max-w-md mx-auto space-y-3">
                 <div className="bg-primary/10 border border-primary/20 text-primary-foreground p-3 rounded-md text-center text-sm font-medium flex items-center justify-center gap-2">
                   <Lightbulb className="w-5 h-5 text-primary flex-shrink-0" />
-                  <span>Menos que o lucro de apenas 1 camisa vendida.</span>
+                  <span>O lucro de UMA camisa já paga seu acesso.</span>
                 </div>
                 <div className="bg-amber-500/10 border border-dashed border-amber-500/50 text-amber-500 p-3 rounded-md text-center text-sm font-medium flex items-center justify-center gap-2">
                   <Timer className="w-5 h-5 flex-shrink-0" />
-                  <span>Esta condição especial pode sair do ar a qualquer momento.</span>
+                  <span>OFERTA POR TEMPO LIMITADO. A qualquer momento o preço pode voltar para R$297.</span>
                 </div>
               </div>
 
               <div className="flex justify-center my-8">
                   <CtaButton className="w-full max-w-lg">
-                    QUERO ACESSAR O FORNECEDOR E COMEÇAR A LUCRAR AGORA
+                    QUERO LUCRAR ALTO ANTES DA COPA
                   </CtaButton>
               </div>
             </div>
@@ -58,19 +58,19 @@ export function Offer() {
             
             <div className="flex justify-center my-8">
                 <CtaButton className="w-full max-w-lg">
-                  QUERO ACESSAR O FORNECEDOR E COMEÇAR A LUCRAR AGORA
+                  QUERO LUCRAR ALTO ANTES DA COPA
                 </CtaButton>
             </div>
 
             <div className="my-12 pt-8 border-t border-border">
               <h3 className="text-2xl md:text-3xl font-bold text-center mb-2">Você não recebe apenas o fornecedor…</h3>
-              <p className="text-center text-muted-foreground mb-8">Você recebe um pacote completo para começar a vender.</p>
+              <p className="text-center text-muted-foreground mb-8">Você leva o arsenal COMPLETO para sair na frente e vender muito.</p>
               <div className="space-y-4 max-w-2xl mx-auto">
                 {exclusiveBonuses.map((bonus, index) => (
                   <div key={index} className="flex items-start gap-4 bg-primary/10 p-4 rounded-lg border border-primary/20">
                     <Gift className="w-8 h-8 text-primary flex-shrink-0" />
                     <div>
-                      <span className="font-semibold text-primary block">BÔNUS #{index + 1}</span>
+                      <span className="font-semibold text-primary block">BÔNUS #{index + 1} - LIBERADO HOJE</span>
                       <span className="text-foreground/90">{bonus}</span>
                     </div>
                   </div>
@@ -78,7 +78,7 @@ export function Offer() {
               </div>
               <div className="flex justify-center my-8">
                 <CtaButton className="w-full max-w-lg">
-                  QUERO ACESSAR O FORNECEDOR E COMEÇAR A LUCRAR AGORA
+                  QUERO LUCRAR ALTO ANTES DA COPA
                 </CtaButton>
               </div>
             </div>
