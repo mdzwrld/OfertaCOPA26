@@ -6,6 +6,7 @@ const exclusiveBenefits = [
   "Estratégia para vender rápido",
   "Como vender no Instagram",
   "Como vender na Shopee",
+  "Como vender no Tiktok",
 ];
 
 export function Benefits() {
